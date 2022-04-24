@@ -53,8 +53,7 @@ false_predict = test_df[test_df["class"] != test_df["predict_class"]]
 print(f"Accuracy = {100-((len(false_predict)/len(test_df))*100)}%")
 test_df.to_csv("data/test_predicted.csv", index=False)
 
-#Accuracy on total set: 99.04%
-#Accuracy on test set: 99.05%
+#Accuracy on test set: 99.22%
 
 
 
