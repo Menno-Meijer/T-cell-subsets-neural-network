@@ -30,7 +30,7 @@ model.compile(
             # metrics=['accuracy', 'binary_accuracy', 'categorical_accuracy']
             metrics = ["accuracy"]
 )
-# train data preparation
+# train data preparation:
 train_df = pd.read_csv("data/train_total.csv")
 train_x = np.column_stack((train_df.FSC_A.values,
                            train_df.FSC_H.values,
